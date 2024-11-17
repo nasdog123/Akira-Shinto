@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akira Shinto</title>
+  <style>
+    /* Styles de base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      color: white;
+      background-color: #121212;
+    }
+
+    /* Barre latérale */
+    .sidebar {
+      width: 250px;
+      background-color: #1c1c1c;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .sidebar h1 {
+      font-size: 1.5rem;
+      color: #4CAF50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 5px 0;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color: #4CAF50;
+    }
+
+    .sidebar .submenu {
+      padding-left: 15px;
+      margin-top: 5px;
+    }
+
+    .sidebar .submenu a {
+      font-size: 0.9rem;
+    }
+
+    /* Contenu principal */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      padding: 20px;
+      color: white;
+    }
+
+    .content .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content h1,
+    .content h2 {
+      color: #4CAF50;
+    }
+
+    .content p {
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .content img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Barre latérale -->
+  <div class="sidebar">
+    <h1>Akira Shinto</h1>
+    <a href="#accueil">Accueil</a>
+    <a href="#presentation">Présentation IRL</a>
+    <div class="submenu">
+      <a href="#histoire">Histoire RP</a>
+      <a href="#motivation">Motivation</a>
+      <a href="#objectifs">Objectifs</a>
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="content">
+    <div class="overlay">
+      <!-- Accueil -->
+      <h1 id="accueil">Bienvenue sur le site d'Akira Shinto</h1>
+      <p>
+        Explorez l’univers fascinant d’Akira Shinto, un ninja énigmatique au passé complexe et au destin empreint de mystères.
+      </p>
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9334eb35-e36b-433f-ad6b-4fa1760c2b6a/df3f98i-24c25b5d-6cd6-445c-9395-dc2860acef49.png/v1/fill/w_1192,h_670,q_70,strp/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvOTMzNGViMzUtZTM2Yi00MzNmLWFkNmItNGZhMTc2MGMyYjZhXC9kZjNmOThpLTI0YzI1YjVkLTZjZDYtNDQ1Yy05Mzk1LWRjMjg2MGFjZWY0OS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Pp5LPy2xRnezz0S6Qd1eR8TBc5k7dgyEU5wRyJNf0m4" alt="Image de Konoha">
+
+      <!-- Présentation IRL -->
+      <h2 id="presentation">Présentation IRL</h2>
+      <p>
+        Derrière Akira Shinto se cache un joueur passionné par le monde du RP (Roleplay) et les aventures immersives. Inspiré par
+        les valeurs de détermination et de résilience, Akira est un personnage conçu pour explorer les thématiques du dépassement
+        de soi et des origines oubliées.
+      </p>
+
+      <!-- Histoire RP -->
+      <h2 id="histoire">Histoire RP d'Akira Shinto</h2>
+      <p>
+        Akira Shinto est né dans un petit village aux confins du Pays du Feu. Sa famille, autrefois liée à un clan puissant, a été
+        bannie pour des raisons inconnues, plongeant ses parents dans une vie d’exil. Son père, un ancien ninja médecin, et sa mère,
+        une experte en techniques de Fûinjutsu, lui enseignèrent les bases du ninjutsu et la discipline nécessaire pour survivre.
+      </p>
+      <p>
+        À l’âge de 10 ans, une tragédie frappa : leur village fut attaqué par des bandits à la recherche d’anciens secrets cachés.
+        Les parents d’Akira se sacrifièrent pour le sauver, le laissant avec un mystérieux rouleau scellé qu’il n’a jamais réussi à ouvrir.
+        Depuis ce jour, Akira erra de village en village, développant ses compétences en tant que ninja indépendant.
+      </p>
+      <p>
+        Aujourd’hui, Akira cherche à découvrir la vérité sur les origines de son clan et à comprendre le contenu du rouleau laissé par ses parents.
+      </p>
+      <img src="https://vignette4.wikia.nocookie.net/naruto/images/8/83/Scrolls.png/revision/latest?cb=20150217201027" alt="Rouleau mystérieux">
+
+      <!-- Motivation -->
+      <h2 id="motivation">Motivation</h2>
+      <p>
+        Akira est guidé par une quête de justice et une volonté de restaurer l’honneur perdu de sa famille. Sa plus grande motivation
+        est de prouver que son clan, bien que banni, a encore un rôle à jouer dans le monde shinobi.
+      </p>
+
+      <!-- Objectifs -->
+      <h2 id="objectifs">Objectifs</h2>
+      <p>
+        - Décoder le rouleau laissé par ses parents.<br>
+        - Retrouver d’éventuels membres survivants de son clan.<br>
+        - Maîtriser des techniques interdites liées au Fûinjutsu.<br>
+        - Construire une nouvelle famille de ninjas partageant ses valeurs.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
